@@ -1,0 +1,17 @@
+AUV tools by Ian Katz (ijk5@mit.edu)
+
+A php library for supporting my AUV web interface projects:
+ * https://github.com/ifreecarve/MOOS-web-gui
+ * https://github.com/ifreecarve/AUV-PlanIt
+
+This code is currently lacking excessive comments, and the KML generation needs to be
+revamped.
+
+Built and tested on Ubuntu Linux; all documentation will assume that OS.
+
+In order to install: 
+ 0. you will need to apt-get install the following (and maybe more):
+      php-mdb2-driver-mysql (pulls in php-pear, php-mdb2, and php5-mysql)
+      apache2
+ 1. modify your php include path (in php.ini) to includes this php directory
+    include_path = ".:/usr/share/php:/usr/share/pear:/PATH/TO/AUV-phplib"
